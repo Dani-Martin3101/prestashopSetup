@@ -5,6 +5,7 @@ a2enmod rewrite
 systemctl restart apache2
 chown -R pi:www-data /var/www/html/
 chmod -R 770 /var/www/html/
+chown -R www-data:www-data /var/www/html/prestashop
 
 apt install -y php libapache2-mod-php
 apt install -y zip unzip
